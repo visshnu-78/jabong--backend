@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
-    name: 'API',
-    script: 'app.js',
+    name: 'backend',
+    script: 'npm start',
 
     // Options reference: https://pm2.keymetrics.io/docs/usage/application-declaration/
     args: 'one two',
@@ -19,11 +19,11 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'node',
-      host : '212.83.163.1',
+      user : 'ubuntu',
+      host : '52.66.200.233',
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
-      path : '/var/www/production',
+      repo : 'https://github.com/visshnu-78/jabong--backend.git',
+      path : '/var/www/backend',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
