@@ -19,7 +19,7 @@
     "username": "postgres",
     "password": "postgres",
     "database": "jabong",
-    "host": "database-1.cjtu16bgdg4a.ap-south-1.rds.amazonaws.com",
+    "host": "jabong.cjtu16bgdg4a.ap-south-1.rds.amazonaws.com",
     "dialect": "postgres",
     "dialectOptions": { "ssl": true},
     "operatorsAliases":0
