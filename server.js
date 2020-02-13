@@ -37,7 +37,7 @@ app.post('/profile', upload.single('profile'), (req, res) => {
 })
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
-app.post('/', function (req, res) {
+app.post('/signup', function (req, res) {
     signup.signup(req,res, model)
 })
 app.put('/signin', function (req, res) {
