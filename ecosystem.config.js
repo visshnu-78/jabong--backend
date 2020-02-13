@@ -24,7 +24,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'https://github.com/visshnu-78/jabong--backend.git',
       path : '/var/www/backend',
-      'post-deploy' : 'npm install && npx sequelize-cli db:migrate --env production && npx sequelize-cli db:seed:all --env production && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'npm install && npx sequelize-cli db:migrate --env production && pm2 reload ecosystem.config.js --env production'
     }
   }
 };
